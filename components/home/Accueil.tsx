@@ -1,6 +1,7 @@
 import Header from "./Header";
 import Footer from "./Footer";
 import accueil from './accueil.module.css'
+import Link from "next/link";
 
 function Accueil(){
     return(
@@ -25,7 +26,7 @@ function Accueil(){
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Buy</a>
+                        <Link href="#" className="btn btn-primary">Buy</Link>
                     </div>
                 </div>
                 <div className={accueil.card+ " "+accueil.c_1}>
@@ -33,7 +34,7 @@ function Accueil(){
                     <div className="card-body">
                         <h5 className="card-title">Card title</h5>
                         <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" className="btn btn-primary">Buy</a>
+                        <Link href="#" className="btn btn-primary">Buy</Link>
                     </div>
                 </div>
                 <div className={accueil.card +  " "+accueil.c_2}>
@@ -50,16 +51,16 @@ function Accueil(){
             </div>
             <div className="fill">
                 <img src="craft.png" className={"jumbotron "+accueil.ct1}/>
-                <a href="/" className={accueil.ll1}>Paint</a>
+                <Link href="/" className={accueil.ll1}>Paint</Link>
             </div>
             <div className={"jumbotron "+accueil.ct2}>
-                <a href="/" className={accueil.ll2}>Sculpture</a>
+                <Link href="/" className={accueil.ll2}>Sculpture</Link>
             </div>
             <div className={"jumbotron "+accueil.ct3}>
-                <a href="/" className={accueil.ll3}>Crafting</a>
+                <Link href="/" className={accueil.ll3}>Crafting</Link>
             </div>
             <div className={"jumbotron "+accueil.ct4}>
-                <a href="/" className={accueil.ll4}>Books</a>
+                <Link href="/" className={accueil.ll4}>Books</Link>
             </div>
             <img src="/craft.png" alt="" />
             <Footer/>

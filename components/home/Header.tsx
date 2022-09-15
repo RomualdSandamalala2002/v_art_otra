@@ -1,4 +1,4 @@
-
+import Link from 'next/link'
 import header from './header.module.css'
 
 function Header(){
@@ -6,34 +6,34 @@ function Header(){
         <>
             <div className={"navbar navbar-dark bg-dark "+header.a}>
                 <div className="container ml-50 mt-30">
-                    <h2 className={"text-light "+header.title}>V'Art'otra</h2>
+                    <h2 className={"text-light "+header.title}>V&lsquo;Art&lsquo;otra</h2>
                     <div className="form-group">
                         <input className="form-control form-control-color-dark" id={header.search} type="text" placeholder="Search"/>
                     </div>
                 </div>
                 <div className={header.l1}>
-                    <a href="/" className={header.link}>Home</a>
+                    <Link href="/" className={header.link}>Home</Link>
                 </div>
                 <div className={header.l2}>
-                    <a href="/" className={header.link}>Paint</a>
+                    <Link href="/" className={header.link}>Paint</Link>
                 </div>
                 <div className={"container "+header.l3}>
-                    <a href="/" className={header.link}>Crafting</a>
+                    <Link href="/" className={header.link}>Crafting</Link>
                 </div>
                 <div className={"container "+header.l4}>
-                    <a href="/" className={header.link}>Sculpture</a>
+                    <Link href="/" className={header.link}>Sculpture</Link>
                 </div>
                 <div className={"container "+header.l5}>
-                    <a href="/" className={header.link}>Book</a>
+                    <Link href="/" className={header.link}>Book</Link>
                 </div>
                 <div className={"container "+header.l6}>
-                    <a href="/" className={header.link}>Others</a>
+                    <Link href="/" className={header.link}>Others</Link>
                 </div>
                 <div className={"container "+header.l7}>
-                    <a href="/" className={header.link}>Login</a>
+                    <Link href="/" className={header.link}>Login</Link>
                 </div>
                 <div className={header.l8}>
-                    <a href="/" className={header.link}>Sign-Up</a>
+                    <Link href="/" className={header.link}>Sign-Up</Link>
                 </div>
            </div>
         </>
